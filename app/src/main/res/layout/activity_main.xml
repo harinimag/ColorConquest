@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="403dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="COLOR CONQUEST"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="324dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/img_7" />
+
+    <Button
+        android:id="@+id/playbutton"
+        android:layout_width="186dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/rounded_cornerb"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="PLAY"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/circle"
+        android:text="\?"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/scoreboard"
+        android:layout_width="131dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/rounded_cornerb"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="SCOREBOARD"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

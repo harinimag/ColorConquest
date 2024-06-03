@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="550dp"
+    android:layout_height="900dp"
+    android:orientation="horizontal">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="385dp"
+        android:layout_height="600dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="354dp"
+            android:layout_height="405dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="18dp"
+            android:background="#6a5acd"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            android:text="\n\n  - 1st Turn of each player: Players can choose any tile on the grid on this turn only. Clicking a tile assigns your colour to it and awards you 3 points on that tile.
+\n  - Subsequent Turns: After the first turn, players can only click on tiles that already have their own colour. Clicking a tile with your colour adds 1 point to that tile.The background colour indicates the next player.
+\n  - Conquest and Expansion: When a tile with your colour reaches 4 points, it triggers an expansion:
+The colour completely disappears from the original tile.
+Your colour spreads to the four surrounding squares in a plus shape (up, down, left, right).
+Each of the four surrounding squares gains 1 point with your colour.
+If any of the four has your opponent’s colour, you conquer the opponent's points on that tile while adding a point to it, completely erasing theirs.
+The expansion is retriggered if the neighbouring tile as well reaches 4 points this way.
+\n  - Players take turns clicking on tiles and the objective is to eliminate your opponent's colour entirely from the screen."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="354dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center"
+            android:text="RULES"
+            android:background="#483d8b"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="28dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="-420dp"
+            android:layout_marginEnd="-350dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@android:drawable/btn_dialog" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
